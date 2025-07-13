@@ -10,7 +10,7 @@ Both models are evaluated based on accuracy and confusion matrices, along with r
 
 ##  Dataset Overview
 
-The Iris dataset consists of **150 samples** from three different species of iris flowers (`Setosa`, `Versicolor`, `Virginica`), each described by four features:
+The Iris dataset consists three different species of iris flowers (`Setosa`, `Versicolor`, `Virginica`), each described by four features:
 - Sepal length
 - Sepal width
 - Petal length
@@ -52,12 +52,10 @@ The goal is to **predict the species** based on these features.
 The dataset was split into training and testing sets using an 80/20 split with a fixed random seed (`random_state=42`) to ensure reproducibility.
 
 ###  Model 1: K-Nearest Neighbors (KNN)
-- Trained on the **scaled feature set**.
 - Achieved **100% accuracy** on the test set.
 - Evaluated using a **confusion matrix** and **classification report**.
 
 ###  Model 2: Decision Tree Classifier
-- Trained on the **original (unscaled) feature set**, since decision trees do not require feature scaling.
 - Achieved **96% accuracy** on the test set.
 - Evaluated using a **confusion matrix** and **classification report**.
 
